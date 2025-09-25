@@ -13,5 +13,13 @@ public class Cviko01_Uloha03
 
         Scanner scanner = new Scanner(System.in);
         int h = scanner.nextInt();
+        int soucet = 0;
+        int dalsi = 0;
+        while(soucet <= h)
+        {
+            dalsi = dalsi + 1;
+            soucet = soucet + dalsi;
+        }
+        System.out.println(dalsi);
     }
 }
