@@ -8,6 +8,10 @@ public class Cviko04_Uloha02
     {
         Scanner scanner = new Scanner(System.in);
 
+        while(true){
+            String line = scanner.nextLine();
+            System.out.println(line);
+        }
         //	Opakuj do nekonečna: přečíst řetězec (String) z konzole
         //  a vypsat stejný řetězec zpět na konzoli.
     }
