@@ -2,21 +2,20 @@ package uprom;
 
 import java.util.Scanner;
 
-public class Cviko05_Uloha01
+public class Cviko05_Uloha01b
 {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        while(true)
+        String vstup;
+        do
         {
-            String vstup = scanner.nextLine();
+            vstup = scanner.nextLine();
             if(vstup.contains(" "))//Více slov
                 System.out.println("Zadej jenom jedno slovo!");
-            else if(vstup.equals("KONEC"))
-                break;
             else
                  System.out.println("Zadal jste slovo délky " + vstup.length());
-        }
+        } while (!vstup.equals("KONEC"));
 
         //	Opakuj do nekonečna: přečíst řetězec (String) z konzole.
         //   - Pokud bylo zadáno jednou slovo, vypiš např. "Zadali jste slovo délky 10"
