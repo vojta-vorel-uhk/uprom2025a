@@ -11,7 +11,8 @@ public class Cviko06_Uloha08
         int monthA = s.nextInt(); // např. 12;
         int yearB = s.nextInt();// např. 2017;
         int monthB = s.nextInt();// např. 11;
-        if(true)   // Doplň
+        if(yearA < yearB
+                || (yearA == yearB && monthA < monthB))   // Doplň
         {
             System.out.println("A je starší než B");
         }
