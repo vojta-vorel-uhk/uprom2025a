@@ -11,4 +11,15 @@ public class Cviko08_Uloha05
         platný rozsah, vrátí prázdný řetězec
         */
     }
+    public static String safeCharAt(String s, int index)
+    {
+        if(index >= 0 && index < s.length())
+        {
+            return Character.toString(s.charAt(index));
+        }
+        else
+        {
+            return "";
+        }
+    }
 }

@@ -4,7 +4,10 @@ public class Cviko08_Uloha02
 {
     public static void main(String[] args)
     {
-        // Vypiš výsledek z metody pocetDni pro každý ze 12 měsíců (1 až 12)
+        for(int i=1; i<=12; i++)
+        {
+            System.out.println(i+": "+pocetDni(i));
+        }
     }
 
     public static int pocetDni(int mesic)
