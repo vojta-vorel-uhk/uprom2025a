@@ -5,8 +5,23 @@ public class Cviko09_Uloha05
     public static void main(String[] args)
     {
         double[] temperatures = {85.0,98.0,88.2,77.3,-11.0,-24.4,92.5,75.0,60.0,35.0,59.0,80.0,-23.0,-6.0,-6.0,76.0,100.0,65.0,-3.0,-8.0,-1.5};
+        System.out.println(maxNegativeInterval(temperatures));
     }
 
+    public static int maxNegativeInterval(double[] p){
+        int current = 0;
+        int result = 0;
+        for(int i=0;i < p.length; i++){
+            if(p[i]<0)
+                current++;
+            else
+                current=0;
+
+            if(current >result)
+                result=current;
+        }
+        return result;
+    }
     // TODO:
     //  Vytvoř a otestuj medotu, která pro danou časovou řadu teplot
     //  (reálná čísla, jedno měření za sekundu) zjistí,
