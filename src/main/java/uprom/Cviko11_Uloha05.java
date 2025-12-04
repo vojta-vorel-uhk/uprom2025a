@@ -13,4 +13,19 @@ public class Cviko11_Uloha05
     //  o minRozdil vyšší hodnotu než pole ciziSkore.
     //  Pokud mají vstupní pole rozdílnou délku, výstup musí být -1.
 
+    public static int pocetVyher(
+            float[] mojeSkore,
+            float[] ciziSkore,
+            float minRozdil)
+    {
+        if(mojeSkore.length != ciziSkore.length)
+            return -1;
+        int c = 0;
+        for(int i=0; i<mojeSkore.length; i++){
+            if(mojeSkore[i] - minRozdil > ciziSkore[i] ){
+              c++;  
+            }
+        }
+        return c;
+    }
 }

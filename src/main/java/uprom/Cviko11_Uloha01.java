@@ -16,10 +16,10 @@ public class Cviko11_Uloha01
         // TODO
         //  Dokonči třídu Cviko11_List a otestuj ji
         Cviko11_List list2 = new Cviko11_List();
-        //list2.add("Německo");
-        //list2.insert(0,"Francie");
-        //list2.add("Portugalsko");
-        //list2.removeAt(0);
-        //System.out.println(list2.get(1));
+        list2.add("Německo");
+        list2.insert(0,"Francie");
+        list2.add("Portugalsko");
+        list2.removeAt(0);
+        System.out.println(list2.get(1));
     }
 }

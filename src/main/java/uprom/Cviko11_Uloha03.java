@@ -19,11 +19,22 @@ public class Cviko11_Uloha03
         // Nápověda 1
         //  Spočítej, kolik prvků ve vstupním poli má sudou hodnotu
         //  Tento počet ulož do proměnné resultCount
-
+        int count = 0;
+        for(int i=0; i<values.length; i++){
+            if(values[i] % 2 == 0){
+                count = count + 1;
+            }
+        }
         // Nápověda 2
         //  Založ pole result (se správnou délkou) a naplň ho sudými čísly
-
-        int[] result = new int[0];
+        int[] result = new int[count];
+        int k = 0;
+        for(int i=0; i<values.length; i++)
+        {
+            if(values[i] % 2 == 0)
+                result[k] = values[i];
+            k = k+1;
+        }
         return result;
     }
 }
