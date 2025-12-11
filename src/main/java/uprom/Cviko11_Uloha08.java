@@ -7,6 +7,7 @@ public class Cviko11_Uloha08
         //TODO: Jaká bude hodnota proměnné r?
         int[] a1 = new int[]{5,6,7};
         int r= method1(method2(a1,0), method2(a1,1));
+        System.out.println(r);
     }
 
     public static int method2(int[] numbers, int p)

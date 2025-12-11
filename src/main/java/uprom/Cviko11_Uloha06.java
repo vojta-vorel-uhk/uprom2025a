@@ -15,7 +15,16 @@ public class Cviko11_Uloha06
     //
     public static int pocetVelkychObrazku(int[] px)
     {
-        return 0;
+        int count = 0;
+        for(int i=0; i<px.length; i=i+2)
+        {
+            // navštěvuji jen pozice 0,2,4,..
+            if(px[i] * px[i+1] >1_000_000)
+            {
+                count++;
+            }
+        }
+        return count;
     }
 
 }

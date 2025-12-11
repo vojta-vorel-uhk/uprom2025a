@@ -7,6 +7,7 @@ public class Cviko11_Uloha07
         //TODO: Jaká bude hodnota proměnné ahoj?
         int ahoj = 5;
         ahoj = compute(grow(ahoj) + grow(1 + compute(ahoj)));
+        System.out.println(ahoj);
     }
 
     public static int compute(int number)
